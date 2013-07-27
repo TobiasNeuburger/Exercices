@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exercises</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_select">Bitte wählen Sie die entsprechende Activity!</string>
+    <string name="action_button">Los</string>
+    <string name="act_longclick">LongClick wird geöffnet</string>
+    <string name="no_value">Keine passende Activity gewählt</string>
+    <string name="title_activity_longclick">Longclick</string>
+   	<string name="title_activity_actionbar">Actionbar</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    
+    
+    
+    <!-- Longclick Activity -->
+    <string name="l_push_me">Drück den Button bitte lange!</string>
+    <string name="l_button">Push me</string>
+    <string name="l_short">Länger :-P</string>
+    <string name="l_toast">Danke ;-)</string>
+
+
+    <!-- Login Activity -->
+    <string name="login_hint_mail">Email-Adresse</string>
+    <string name="login_hint_pass">Passwort</string>
+    <string name="login_button_login">Anmelden</string>
+    <string name="login_button_register">Konto erstellen</string>
+    <string name="login_successful">Anmeldung erfolgreich</string>
+    <string name="login_dismissed">Anmeldung nicht erfolgreich</string>
+    
+    <!-- Register Activity -->
+    <string name="register_hint_mail">Email-Adresse</string>
+    <string name="register_hint_pass">Passwort</string>
+    <string name="register_button_register">Konto erstellen</string>
+    <string name="register_successful">Registrierung erfolgreich</string>
+    <string name="register_dismissed">Registrierung nicht erfolgreich</string>
+
+
+</resources>
