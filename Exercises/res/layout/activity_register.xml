@@ -18,28 +18,55 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:hint="@string/register_hint_mail" />
-
+    
     <EditText
-        android:id="@+id/register_pass"
+        android:id="@+id/register_firstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/register_mail"
         android:layout_below="@+id/register_mail"
-        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/register_hint_pass" >
+        android:inputType="textPersonName"
+        android:hint="@string/register_hint_firstName" >
 
         <requestFocus />
     </EditText>
+
+    <EditText
+        android:id="@+id/register_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_firstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/register_hint_lastName" />
+    
+        <EditText
+        android:id="@+id/register_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_lastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/register_hint_pass"
+        android:inputType="textPassword" />
+    
 
     <Button
         android:id="@+id/register_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
         android:text="@string/register_button_register" />
+
+
+    
 
 </RelativeLayout>
 

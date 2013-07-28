@@ -1,7 +1,9 @@
 package com.example.exercises;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -19,6 +21,8 @@ public class Login extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
+		final SharedPreferences prefs = this.getSharedPreferences("com.example.exercices",Context.MODE_PRIVATE);	
+		
 		loginDataBaseAdapter = new LoginDataBaseAdapter(this);
 		loginDataBaseAdapter = loginDataBaseAdapter.open();
 		
@@ -28,12 +32,13 @@ public class Login extends Activity {
 			@Override
 			public void onClick(View v) {
 				String mail = ((EditText) findViewById(R.id.login_mail)).getText().toString();
-				String pass = ((EditText) findViewById(R.id.login_pass)).getText().toString();
+				String password = ((EditText) findViewById(R.id.login_pass)).getText().toString();
 				
-				String dbPass = loginDataBaseAdapter.getSinlgeEntry(mail);
-				
-				if (mail.length() != 0 && pass.length() != 0 && pass.equals(dbPass)) {
+				if (mail.length() != 0 && password.length() != 0 && loginDataBaseAdapter.checkPassword(mail, password)) {
+					prefs.edit().putString("MAIL", mail).commit();
 					Toast.makeText(getApplicationContext(), R.string.login_successful, Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent (getApplicationContext(), Welcome.class);
+					startActivity (intent);
 				}
 				else
 					Toast.makeText(getApplicationContext(), R.string.login_dismissed, Toast.LENGTH_SHORT).show();

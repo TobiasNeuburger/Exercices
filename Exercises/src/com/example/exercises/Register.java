@@ -28,10 +28,12 @@ public class Register extends Activity {
 			@Override
 			public void onClick(View v) {
 				String mail = ((EditText) findViewById(R.id.register_mail)).getText().toString();
+				String firstName = ((EditText) findViewById(R.id.register_firstName)).getText().toString();
+				String lastName = ((EditText) findViewById(R.id.register_lastName)).getText().toString();
 				String pass = ((EditText) findViewById(R.id.register_pass)).getText().toString();
 				
-				if (mail.length() != 0 && pass.length() != 0) {
-					loginDataBaseAdapter.insertEntry(mail, pass);
+				if (mail.length() != 0 && firstName.length() != 0 && lastName.length() != 0 && pass.length() != 0) {
+					loginDataBaseAdapter.insertEntry(mail, firstName, lastName, pass);
 					Toast.makeText(getApplicationContext(), R.string.register_successful, Toast.LENGTH_SHORT).show();
 					Intent intent = new Intent (getApplicationContext(), Login.class);
 					intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
