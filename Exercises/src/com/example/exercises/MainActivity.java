@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 		
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 		
-		List <String> values = Arrays.asList("Long Click","Action Bar", "Login", "Menu", "Searchview", "ActionBar", "ListView");
+		List <String> values = Arrays.asList("Long Click","Action Bar", "Login", "Menu", "Searchview", "ListView");
 		ArrayAdapter <String> adapter = new ArrayAdapter <String>(this, android.R.layout.simple_spinner_item, values);
 		
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -53,6 +53,18 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 				case 2:
 					Intent intent3 = new Intent(getApplicationContext(), Login.class);
 					startActivity(intent3);
+					break;
+				case 3:
+					Intent intent4 = new Intent(getApplicationContext(), Mmenu.class);
+					startActivity(intent4);
+					break;
+				case 4:
+					Intent intent5 = new Intent(getApplicationContext(), Seachview.class);
+					startActivity(intent5);
+					break;	
+				case 5:
+					Intent intent6 = new Intent(getApplicationContext(), MyListView.class);
+					startActivity(intent6);
 					break;	
 				default:
 					Toast.makeText(getApplicationContext(), R.string.no_value, Toast.LENGTH_SHORT).show();

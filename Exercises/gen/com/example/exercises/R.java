@@ -28,39 +28,54 @@ public final class R {
     }
     public static final class id {
         public static final int action_button=0x7f080007;
-        public static final int action_settings=0x7f080011;
+        public static final int action_settings=0x7f080014;
         public static final int info=0x7f080005;
         public static final int l_button=0x7f080004;
+        public static final int listRow_text=0x7f080012;
         public static final int login_action=0x7f080003;
         public static final int login_mail=0x7f080000;
         public static final int login_pass=0x7f080001;
         public static final int login_register=0x7f080002;
-        public static final int register_action=0x7f08000c;
-        public static final int register_firstName=0x7f080009;
-        public static final int register_lastName=0x7f08000a;
-        public static final int register_mail=0x7f080008;
-        public static final int register_pass=0x7f08000b;
+        public static final int menu_button=0x7f080008;
+        public static final int menu_first=0x7f080015;
+        public static final int menu_second=0x7f080016;
+        public static final int menu_third=0x7f080017;
+        public static final int register_action=0x7f08000d;
+        public static final int register_firstName=0x7f08000a;
+        public static final int register_lastName=0x7f08000b;
+        public static final int register_mail=0x7f080009;
+        public static final int register_pass=0x7f08000c;
+        public static final int searchbar=0x7f080013;
         public static final int spinner1=0x7f080006;
-        public static final int welcome_firstName=0x7f08000e;
-        public static final int welcome_lastName=0x7f08000f;
-        public static final int welcome_mail=0x7f08000d;
-        public static final int welcome_password=0x7f080010;
+        public static final int welcome_firstName=0x7f08000f;
+        public static final int welcome_lastName=0x7f080010;
+        public static final int welcome_mail=0x7f08000e;
+        public static final int welcome_password=0x7f080011;
     }
     public static final class layout {
         public static final int activity_actionbar=0x7f030000;
         public static final int activity_login=0x7f030001;
         public static final int activity_longclick=0x7f030002;
         public static final int activity_main=0x7f030003;
-        public static final int activity_register=0x7f030004;
-        public static final int activity_welcome=0x7f030005;
+        public static final int activity_mmenu=0x7f030004;
+        public static final int activity_my_list_view=0x7f030005;
+        public static final int activity_register=0x7f030006;
+        public static final int activity_seachview=0x7f030007;
+        public static final int activity_welcome=0x7f030008;
+        public static final int listrow=0x7f030009;
+        public static final int searchbar=0x7f03000a;
     }
     public static final class menu {
         public static final int actionbar=0x7f070000;
         public static final int login=0x7f070001;
         public static final int longclick=0x7f070002;
         public static final int main=0x7f070003;
-        public static final int register=0x7f070004;
-        public static final int welcome=0x7f070005;
+        public static final int mmenu=0x7f070004;
+        public static final int mmenu_2=0x7f070005;
+        public static final int my_list_view=0x7f070006;
+        public static final int register=0x7f070007;
+        public static final int seachview=0x7f070008;
+        public static final int welcome=0x7f070009;
     }
     public static final class string {
         public static final int act_longclick=0x7f050004;
@@ -68,38 +83,50 @@ public final class R {
         public static final int action_select=0x7f050002;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int l_button=0x7f05000c;
+        public static final int hello_world=0x7f050024;
+        public static final int l_button=0x7f05000e;
         /**  Longclick Activity 
          */
-        public static final int l_push_me=0x7f05000b;
-        public static final int l_short=0x7f05000d;
-        public static final int l_toast=0x7f05000e;
-        public static final int login_button_login=0x7f050011;
-        public static final int login_button_register=0x7f050012;
-        public static final int login_dismissed=0x7f050014;
+        public static final int l_push_me=0x7f05000d;
+        public static final int l_short=0x7f05000f;
+        public static final int l_toast=0x7f050010;
+        public static final int login_button_login=0x7f050013;
+        public static final int login_button_register=0x7f050014;
+        public static final int login_dismissed=0x7f050016;
         /**  Login Activity 
          */
-        public static final int login_hint_mail=0x7f05000f;
-        public static final int login_hint_pass=0x7f050010;
-        public static final int login_successful=0x7f050013;
+        public static final int login_hint_mail=0x7f050011;
+        public static final int login_hint_pass=0x7f050012;
+        public static final int login_successful=0x7f050015;
+        /**  Menu Activity 
+         */
+        public static final int menu_first=0x7f05001f;
+        public static final int menu_second=0x7f050020;
+        public static final int menu_switch=0x7f050022;
+        public static final int menu_third=0x7f050021;
         public static final int no_value=0x7f050005;
-        public static final int register_button_register=0x7f050019;
-        public static final int register_dismissed=0x7f05001b;
-        public static final int register_hint_firstName=0x7f050016;
-        public static final int register_hint_lastName=0x7f050017;
+        public static final int register_button_register=0x7f05001b;
+        public static final int register_dismissed=0x7f05001d;
+        public static final int register_hint_firstName=0x7f050018;
+        public static final int register_hint_lastName=0x7f050019;
         /**  Register Activity 
          */
-        public static final int register_hint_mail=0x7f050015;
-        public static final int register_hint_pass=0x7f050018;
-        public static final int register_successful=0x7f05001a;
+        public static final int register_hint_mail=0x7f050017;
+        public static final int register_hint_pass=0x7f05001a;
+        public static final int register_successful=0x7f05001c;
         public static final int title_activity_actionbar=0x7f050007;
         public static final int title_activity_login=0x7f050008;
         public static final int title_activity_longclick=0x7f050006;
-        public static final int title_activity_register=0x7f050009;
-        public static final int title_activity_welcome=0x7f05000a;
-        /**   Welcome Activity 
+        public static final int title_activity_mmenu=0x7f05000b;
+        /**  Seachview Activity 
          */
-        public static final int welcome_blanko=0x7f05001c;
+        public static final int title_activity_my_list_view=0x7f050023;
+        public static final int title_activity_register=0x7f050009;
+        public static final int title_activity_seachview=0x7f05000c;
+        public static final int title_activity_welcome=0x7f05000a;
+        /**  Welcome Activity 
+         */
+        public static final int welcome_blanko=0x7f05001e;
     }
     public static final class style {
         public static final int ActionBar=0x7f060003;

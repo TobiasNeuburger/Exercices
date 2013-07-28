@@ -43,6 +43,18 @@
             android:name="com.example.exercises.Welcome"
             android:label="@string/title_activity_welcome" >
         </activity>
+        <activity
+            android:name="com.example.exercises.Mmenu"
+            android:label="@string/title_activity_mmenu" >
+        </activity>
+        <activity
+            android:name="com.example.exercises.Seachview"
+            android:label="@string/title_activity_seachview" >
+        </activity>
+        <activity
+            android:name="com.example.exercises.MyListView"
+            android:label="@string/title_activity_my_list_view" >
+        </activity>
     </application>
 
 </manifest>

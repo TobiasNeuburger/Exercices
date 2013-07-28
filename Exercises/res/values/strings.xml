@@ -12,6 +12,8 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_mmenu">Menu</string>
+    <string name="title_activity_seachview">Seachview</string>
 
     <!-- Longclick Activity -->
     <string name="l_push_me">Drück den Button bitte lange!</string>
@@ -35,8 +37,18 @@
     <string name="register_button_register">Konto erstellen</string>
     <string name="register_successful">Registrierung erfolgreich</string>
     <string name="register_dismissed">Registrierung nicht erfolgreich</string>
-    
-    <!--  Welcome Activity -->
+
+    <!-- Welcome Activity -->
     <string name="welcome_blanko">BLANKO</string>
+
+    <!-- Menu Activity -->
+    <string name="menu_first">1. Eintrag</string>
+    <string name="menu_second">2. Eintrag</string>
+    <string name="menu_third">3. Eintrag</string>
+    <string name="menu_switch">Eintrag einblenden</string>
+
+    <!-- Seachview Activity -->
+    <string name="title_activity_my_list_view">MyListView</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
