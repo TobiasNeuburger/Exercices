@@ -11,7 +11,7 @@ import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 import android.widget.Toast;
 
-public class Seachview extends Activity {
+public class Searchview extends Activity {
 
 	SearchView sv;
 	
@@ -33,7 +33,7 @@ public class Seachview extends Activity {
 				InputMethodManager imm = (InputMethodManager) getApplicationContext().getSystemService(FragmentActivity.INPUT_METHOD_SERVICE);
 		        imm.hideSoftInputFromWindow(sv.getWindowToken(), 0);
 		        
-		        //Set Seachview to default status
+		        //Set Searchview to default status
 		        sv.onActionViewCollapsed();
 		        
 		        //Make toast of search input

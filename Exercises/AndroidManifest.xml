@@ -48,7 +48,7 @@
             android:label="@string/title_activity_mmenu" >
         </activity>
         <activity
-            android:name="com.example.exercises.Seachview"
+            android:name="com.example.exercises.Searchview"
             android:label="@string/title_activity_seachview" >
         </activity>
         <activity

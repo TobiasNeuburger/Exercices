@@ -59,7 +59,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener {
 					startActivity(intent4);
 					break;
 				case 4:
-					Intent intent5 = new Intent(getApplicationContext(), Seachview.class);
+					Intent intent5 = new Intent(getApplicationContext(), Searchview.class);
 					startActivity(intent5);
 					break;	
 				case 5:
